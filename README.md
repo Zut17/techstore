@@ -1,2 +1,2 @@
-# techstore
-Site e-commerce de ventes d'ordinateur et de produits électronique.
+# Etape 1: 
+Mise en place de l'installation, rôles, contrat du panier, format d’un produit.
