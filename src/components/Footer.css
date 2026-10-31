@@ -1,7 +1,7 @@
 .footer { background: var(--second-color); color: #E0E0E0; margin-top: 56px; padding: 44px 0 20px; font-size: 14px; }
 .footer-cols { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 32px; }
 .footer h3 { color: var(--third-color); font-size: 15px; margin-bottom: 12px; }
-.footer a { display: block; padding: 5px 0; }
+.footer a { display: flex; align-items: center; min-height: 44px; }
 .footer a:hover { color: var(--main-color); }
 .footer-copy { border-top: 1px solid #3A3A3A; margin-top: 32px; padding-top: 16px; text-align: center; font-size: 13px; }
 @media (max-width: 760px) { .footer-cols { grid-template-columns: 1fr; } }

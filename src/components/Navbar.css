@@ -3,7 +3,7 @@
 
 .navbar-top { background: var(--second-color); color: var(--third-color); }
 .navbar-top-inner { display: flex; align-items: center; gap: 24px; padding-top: 16px; padding-bottom: 16px; flex-wrap: wrap; }
-.navbar-logo { font-size: 26px; font-weight: 700; letter-spacing: -0.5px; }
+.navbar-logo { display: inline-flex; align-items: center; min-height: 44px; font-size: 26px; font-weight: 700; letter-spacing: -0.5px; }
 .navbar-logo span { color: var(--main-color); }
 
 .navbar-search { flex: 1; min-width: 260px; display: flex; }
