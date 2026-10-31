@@ -47,7 +47,7 @@ function Navbar() {
           <div className="navbar-actions">
             {user ? (
               <>
-                <span>Bonjour, {user.name}</span>
+                <span className="navbar-user">Bonjour, {user.name}</span>
                 <button type="button" className="navbar-logout" onClick={logout}>Déconnexion</button>
               </>
             ) : (
