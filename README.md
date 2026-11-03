@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TechStore
 
 Site e-commerce d'informatique et d'électronique, réalisé dans le cadre du cours de développement d'interfaces front-end.
@@ -70,3 +71,7 @@ Pour remettre le site à zéro : F12 → Application → Local Storage → http:
 - On ne modifie pas les fichiers d'un autre membre : on lui demande.
 
 Vérifie que .gitignore contient bien node_modules et dist (c'est le cas avec le modèle Vite).
+=======
+# e-techstore
+Site e-commerce de ventes d'ordinateur et de produits électronique.
+>>>>>>> origin/main
