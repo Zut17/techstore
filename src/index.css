@@ -1,111 +1,305 @@
+/* ===== Variables : couleurs, police, arrondis ===== */
+
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  --main-color: #01D1FF;
+  --main-dark: #007C99;
+  --main-soft: #E8FAFF;
+  --second-color: #0A0A0A;
+  --third-color: #FFFFFF;
+  --forth-color: #C97147;
+  --fifth-color: #FFCC00;
+  --sixth-color: #FD7B05;
+  --success-color: #30986D;
+  --success-dark: #1F6B4A;
+  --error-color: #B3261E;
+  --price-color: #A4572F;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+  --bg-light-color: #F6F8FA;
+  --text-light-color: #5B6B7A;
+  --border-color: #E5E9EE;
+  --input-border: #B9C2CC;
 
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  @media (max-width: 1024px) {
-    font-size: 16px;
-  }
+  --font-main: Inter, system-ui, "Segoe UI", Arial, sans-serif;
+  --radius: 10px;
+  --radius-lg: 16px;
+  --shadow-md: 0 8px 24px rgba(10, 10, 10, 0.08);
+  --container-width: 1180px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  }
+/* ===== Base ===== */
 
-  #social .button-icon {
-    filter: invert(1) brightness(2);
-  }
+* {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
-}
-
-#root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
+  font-family: var(--font-main);
+  color: var(--second-color);
+  background: var(--third-color);
+  line-height: 1.5;
 }
 
 h1,
-h2 {
-  font-family: var(--heading);
-  font-weight: 500;
-  color: var(--text-h);
-}
-
-h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
-  }
-}
-h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
-  }
-}
+h2,
+h3,
 p {
   margin: 0;
 }
 
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-code {
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--main-dark);
+  outline-offset: 2px;
+}
+
+/* Le contenu prend toute la hauteur : le pied de page reste en bas */
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#root > main {
+  flex: 1;
+}
+
+/* ===== Mise en page ===== */
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding-top: 56px;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  margin-bottom: 20px;
+}
+
+.page-title {
+  font-size: 30px;
+  letter-spacing: -0.5px;
+  margin-bottom: 20px;
+}
+
+.crumb {
+  font-size: 13px;
+  color: var(--text-light-color);
+  padding: 20px 0 8px;
+}
+
+/* ===== Boutons (hauteur minimale 44 px : confort tactile) ===== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 44px;
+  padding: 0 24px;
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--main-color);
+  color: var(--second-color);
+  font-weight: 600;
   font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
+  transition: background 0.15s;
+}
+
+.btn:hover {
+  background: #00BCE6;
+}
+
+.btn:disabled {
+  background: var(--input-border);
+  cursor: not-allowed;
+}
+
+.btn-dark {
+  background: var(--second-color);
+  color: var(--third-color);
+}
+
+.btn-dark:hover {
+  background: #262626;
+}
+
+.btn-link {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--price-color);
+  font-weight: 600;
+  text-decoration: underline;
+  min-height: 44px;
+}
+
+.price {
+  color: var(--price-color);
+  font-weight: 700;
+}
+
+.tag {
+  display: inline-block;
+  background: var(--sixth-color);
+  color: var(--second-color);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 6px;
+}
+
+/* ===== Formulaires ===== */
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="search"],
+select,
+textarea {
+  min-height: 44px;
+  border: 1px solid var(--input-border);
+  border-radius: var(--radius);
+  padding: 0 14px;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 400;
+  background: var(--third-color);
+  color: var(--second-color);
+}
+
+textarea {
+  padding: 10px 14px;
+  resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--main-dark);
+}
+
+input[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+  border-color: var(--error-color);
+}
+
+.field-error {
+  color: var(--error-color);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.form-error {
+  color: var(--error-color);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+/* ===== Messages d'état : chargement, erreur, liste vide ===== */
+
+.state {
+  padding: 32px 20px;
+  text-align: center;
+  color: var(--text-light-color);
+  font-size: 15px;
+  background: var(--bg-light-color);
+  border-radius: var(--radius-lg);
+}
+
+.state.form-error {
+  color: var(--error-color);
+  background: #FDF1F0;
+  margin-bottom: 0;
+}
+
+/* Texte lu par les lecteurs d'écran mais invisible à l'écran */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 760px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .section {
+    padding-top: 40px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .page-title {
+    font-size: 24px;
+  }
+}
+
+/* Respect du réglage « réduire les animations » du système */
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Lien « Aller au contenu » : visible seulement au clavier (touche Tab) */
+
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -60px;
+  z-index: 10;
+  padding: 10px 16px;
+  border-radius: var(--radius);
+  background: var(--second-color);
+  color: var(--third-color);
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 12px;
 }
