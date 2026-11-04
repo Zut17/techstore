@@ -89,19 +89,20 @@
   padding: 0 18px;
   border: 0;
   border-radius: var(--radius);
-  background: var(--night);
-  color: var(--third-color);
+  background: var(--main-color);
+  color: var(--second-color);
   font-weight: 700;
   font-size: 14px;
   transition: background 0.15s;
 }
 
 .product-card-button:hover {
-  background: var(--night-3);
+  background: #4ADDFF;
 }
 
 .product-card-button.is-added {
   background: var(--success-dark);
+  color: var(--third-color);
 }
 
 .product-card-button:disabled {

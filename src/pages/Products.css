@@ -121,9 +121,9 @@
 }
 
 .products-pagination button[aria-current="page"] {
-  background: var(--night);
-  color: var(--third-color);
-  border-color: var(--night);
+  background: var(--main-color);
+  color: var(--second-color);
+  border-color: var(--main-color);
 }
 
 /* ===== Responsive ===== */
