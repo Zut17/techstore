@@ -1,0 +1,34 @@
+.product-detail { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+.product-detail-image { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain; border-radius: var(--radius-lg); background: #EEF1F5; }
+
+.product-detail-info { display: flex; flex-direction: column; gap: 14px; }
+.product-detail-info h1 { font-size: 32px; line-height: 1.15; letter-spacing: -0.5px; }
+.product-detail-category { color: var(--text-light-color); font-size: 14px; }
+.product-detail-price { font-size: 30px; }
+.product-detail-stock { color: var(--success-dark); font-weight: 600; font-size: 14px; }
+.product-detail-description { color: #3D4A56; }
+
+.product-detail-actions { display: flex; gap: 14px; align-items: center; margin-top: 6px; }
+.product-detail-actions .btn { flex: 1; }
+.product-detail-qty { display: inline-flex; align-items: center; border: 1px solid var(--input-border); border-radius: var(--radius); }
+.product-detail-qty button { width: 44px; height: 44px; border: 0; background: none; font-size: 20px; }
+.product-detail-qty button:disabled { color: var(--input-border); cursor: not-allowed; }
+.product-detail-qty span { min-width: 36px; text-align: center; font-weight: 600; }
+.product-detail-added { color: var(--success-dark); font-size: 14px; font-weight: 600; }
+.product-detail-added a { text-decoration: underline; }
+
+.product-detail-related { margin-top: 56px; }
+.product-detail-related-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+
+.product-detail-missing { display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center; }
+.product-detail-missing p { color: var(--text-light-color); }
+
+@media (max-width: 1000px) {
+  .product-detail-related-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 760px) {
+  .product-detail { grid-template-columns: 1fr; gap: 20px; }
+  .product-detail-info h1 { font-size: 26px; }
+  .product-detail-price { font-size: 24px; }
+  .product-detail-related-grid { gap: 12px; }
+}
