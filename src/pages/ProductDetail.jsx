@@ -93,6 +93,11 @@ function ProductDetail() {
               Produit ajouté au panier. <Link to="/panier">Voir le panier</Link>
             </p>
           )}
+          <ul className="product-detail-perks">
+            <li>Livraison en 24 à 48 h à Douala et Yaoundé</li>
+            <li>Paiement à la livraison, par Mobile Money ou par carte</li>
+            <li>Retours sous 7 jours, échange gratuit si défectueux</li>
+          </ul>
         </div>
       </div>
 

@@ -6,11 +6,16 @@ function Footer() {
     <footer className="footer">
       <div className="container">
         <div className="footer-cols">
-          <div>
+          <div className="footer-about">
             <p className="footer-brand">
               Tech<span>Store</span>
             </p>
-            <p>Ordinateurs, composants et électronique au meilleur prix.</p>
+            <p>Ordinateurs, composants et électronique, livrés à Douala et Yaoundé en 24 à 48 heures.</p>
+            <ul className="footer-pay" aria-label="Moyens de paiement acceptés">
+              <li>Paiement à la livraison</li>
+              <li>Mobile Money</li>
+              <li>Carte bancaire</li>
+            </ul>
           </div>
 
           <nav aria-labelledby="footer-shop">
