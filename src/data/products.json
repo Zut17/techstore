@@ -4,7 +4,7 @@
     "name": "Laptop Pro 15",
     "category": "PC portables",
     "price": 450000,
-    "image": "/images/laptop-pro.jpg",
+    "image": "/images/laptop-pro.webp",
     "description": "Intel Core i7, 16 Go RAM, SSD 512 Go, écran 15,6 pouces Full HD.",
     "stock": 12
   },
@@ -13,7 +13,7 @@
     "name": "Laptop Essentiel 14",
     "category": "PC portables",
     "price": 280000,
-    "image": "/images/laptop-essentiel.jpg",
+    "image": "/images/laptop-essentiel.webp",
     "description": "Intel Core i3, 8 Go RAM, SSD 256 Go, idéal pour les études.",
     "stock": 20
   },
@@ -22,7 +22,7 @@
     "name": "Laptop Gamer X17",
     "category": "PC portables",
     "price": 750000,
-    "image": "/images/laptop-gamer.jpg",
+    "image": "/images/laptop-gamer.webp",
     "description": "Intel Core i7, 16 Go RAM, RTX 4050, écran 144 Hz.",
     "stock": 6
   },
@@ -31,7 +31,7 @@
     "name": "PC Bureau Office",
     "category": "PC de bureau",
     "price": 220000,
-    "image": "/images/pc-office.jpg",
+    "image": "/images/pc-office.webp",
     "description": "Intel Core i5, 8 Go RAM, SSD 256 Go, pour le travail de bureau.",
     "stock": 10
   },
@@ -40,7 +40,7 @@
     "name": "PC Bureau Gamer",
     "category": "PC de bureau",
     "price": 620000,
-    "image": "/images/pc-gamer.jpg",
+    "image": "/images/pc-gamer.webp",
     "description": "Ryzen 5, 16 Go RAM, RTX 4060, SSD 1 To, boîtier RGB.",
     "stock": 5
   },
@@ -49,7 +49,7 @@
     "name": "Mini PC Compact",
     "category": "PC de bureau",
     "price": 190000,
-    "image": "/images/mini-pc.jpg",
+    "image": "/images/mini-pc.webp",
     "description": "Format ultra compact, Intel N100, 8 Go RAM, SSD 256 Go.",
     "stock": 14
   },
@@ -58,7 +58,7 @@
     "name": "SSD 1 To NVMe",
     "category": "Composants",
     "price": 65000,
-    "image": "/images/ssd-1to.jpg",
+    "image": "/images/ssd-1to.webp",
     "description": "Vitesse de lecture jusqu'à 3500 Mo/s.",
     "stock": 25
   },
@@ -67,7 +67,7 @@
     "name": "Barrette RAM 16 Go DDR4",
     "category": "Composants",
     "price": 45000,
-    "image": "/images/ram-16go.jpg",
+    "image": "/images/ram-16go.webp",
     "description": "Mémoire DDR4 3200 MHz pour PC de bureau.",
     "stock": 30
   },
@@ -76,7 +76,7 @@
     "name": "Disque dur externe 2 To",
     "category": "Composants",
     "price": 55000,
-    "image": "/images/disque-externe.jpg",
+    "image": "/images/disque-externe.webp",
     "description": "USB 3.0, compatible Windows et Mac.",
     "stock": 18
   },
@@ -85,7 +85,7 @@
     "name": "Souris sans fil X1",
     "category": "Accessoires",
     "price": 8000,
-    "image": "/images/souris-x1.jpg",
+    "image": "/images/souris-x1.webp",
     "description": "Souris optique sans fil, 1600 DPI.",
     "stock": 40
   },
@@ -94,7 +94,7 @@
     "name": "Clavier mécanique RGB",
     "category": "Accessoires",
     "price": 28000,
-    "image": "/images/clavier-rgb.jpg",
+    "image": "/images/clavier-rgb.webp",
     "description": "Switches rouges, rétroéclairage RGB, format AZERTY.",
     "stock": 22
   },
@@ -103,7 +103,7 @@
     "name": "Casque Gaming USB",
     "category": "Accessoires",
     "price": 22000,
-    "image": "/images/casque-gaming.jpg",
+    "image": "/images/casque-gaming.webp",
     "description": "Son surround 7.1, micro antibruit.",
     "stock": 16
   },
@@ -112,7 +112,7 @@
     "name": "Sac à dos pour ordinateur",
     "category": "Accessoires",
     "price": 15000,
-    "image": "/images/sac-pc.jpg",
+    "image": "/images/sac-pc.webp",
     "description": "Compatible jusqu'à 15,6 pouces, résistant à l'eau.",
     "stock": 35
   },
@@ -121,7 +121,7 @@
     "name": "Écran 24 pouces Full HD",
     "category": "Écrans",
     "price": 95000,
-    "image": "/images/ecran-24.jpg",
+    "image": "/images/ecran-24.webp",
     "description": "Dalle IPS, 75 Hz, entrées HDMI et VGA.",
     "stock": 15
   },
@@ -130,7 +130,7 @@
     "name": "Écran Gamer 27 pouces 144 Hz",
     "category": "Écrans",
     "price": 185000,
-    "image": "/images/ecran-27.jpg",
+    "image": "/images/ecran-27.webp",
     "description": "Résolution 2K, temps de réponse 1 ms.",
     "stock": 8
   },
@@ -139,7 +139,7 @@
     "name": "Smartphone Nova 128 Go",
     "category": "Électronique",
     "price": 150000,
-    "image": "/images/smartphone-nova.jpg",
+    "image": "/images/smartphone-nova.webp",
     "description": "Écran AMOLED 6,5 pouces, 6 Go RAM, double SIM.",
     "stock": 20
   },
@@ -148,7 +148,7 @@
     "name": "Tablette Tab 10",
     "category": "Électronique",
     "price": 120000,
-    "image": "/images/tablette.jpg",
+    "image": "/images/tablette.webp",
     "description": "Écran 10 pouces, 4 Go RAM, 64 Go de stockage.",
     "stock": 12
   },
@@ -157,7 +157,7 @@
     "name": "Enceinte Bluetooth Boom",
     "category": "Électronique",
     "price": 25000,
-    "image": "/images/enceinte.jpg",
+    "image": "/images/enceinte.webp",
     "description": "Étanche, 12 heures d'autonomie.",
     "stock": 28
   }
