@@ -3,8 +3,8 @@
 .home-hero {
   position: relative;
   overflow: hidden;
-  background: var(--night);
-  color: var(--third-color);
+  background: var(--third-color);
+  color: var(--second-color);
 }
 
 .home-hero-bg {
@@ -36,7 +36,7 @@
   margin: 22px 0 34px;
   font-size: 18px;
   line-height: 1.6;
-  color: #C9D3DF;
+  color: #3D4A56;
 }
 
 .home-hero-actions {
@@ -52,17 +52,17 @@
   list-style: none;
   margin: 56px 0 0;
   padding: 24px 0 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-top: 1px solid var(--border-color);
   max-width: 600px;
   font-size: 14px;
-  color: #A9B6C6;
+  color: #5B6B7A;
 }
 
 .home-hero-facts strong {
   display: block;
   font-family: var(--font-display);
   font-size: 22px;
-  color: var(--third-color);
+  color: var(--second-color);
 }
 
 @keyframes hero-in {
@@ -182,16 +182,13 @@
 }
 
 .home-promo-dark {
-  color: #C9D3DF;
+  background: var(--bg-light-color);
+  color: #3D4A56;
 }
 
 .home-promo-dark strong,
 .home-promo-dark .home-promo-cta {
-  color: var(--third-color);
-}
-
-.home-promo-dark {
-  background: radial-gradient(circle at 78% 50%, rgba(1, 209, 255, 0.22), transparent 55%), var(--night);
+  color: var(--second-color);
 }
 
 .home-promo-light {
@@ -205,10 +202,6 @@
 }
 
 .home-promo:hover .home-promo-cta {
-  color: var(--main-color);
-}
-
-.home-promo-light:hover .home-promo-cta {
   color: var(--main-dark);
 }
 
@@ -297,8 +290,8 @@
   }
 
   .home-hero-bg {
-    object-position: 78% center;
-    opacity: 0.32;
+    object-position: 100% center;
+    opacity: 0.14;
   }
 
   .home-hero p {
